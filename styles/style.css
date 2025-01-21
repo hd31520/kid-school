@@ -3,22 +3,31 @@
 .quicksand-all {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-   
+   padding: 0 10px;
     font-style: normal;
   }
 
 
   /* Mobile screan */
+  /* Navbar */
   
   .mobile-navbar{
     display: flex;
     justify-content: space-between;
   }
 
+.desktop-navbar{
+  display: none;
+}
 
   /* Larger screan */
   @media screen and (min-width: 576px) {
+      /* Navbar */
     .mobile-navbar {
         display: none;
     }
+    .desktop-navbar{
+      display: flex;
+    } 
+    
 }
