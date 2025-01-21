@@ -5,6 +5,7 @@
 .quicksand-all {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
+    padding: 0 20px;
    
     font-style: normal;
   }
@@ -13,34 +14,48 @@
   .flex {
     display: flex;
   }
-
-
-  /* Mobile screan */
-
-  .mobile-navbar{
-   
+  .justify-between{
     justify-content: space-between;
+  }
+  .itms-center{
+    align-items: center;
   }
 
   .hidden{
     display: none;
   }
 
+ .banner{
+  
+    
+    flex-direction: column-reverse;
+ }
+ 
+
+  
+
 
   /* Larger screan */
   @media screen and (min-width: 576px) {
+
+    header{
+        padding: 0 6rem;
+    }
+
+    main{
+       padding:  0 6rem;
+    }
     /* Navbar start */
     .mobile-navbar {
         display: none;
     }
     .desktop-navbar{
         display: flex ;
-        justify-content: space-between;
-        align-items: center;
+        
     }
     .logo-left{
         display: flex;
-        align-items: center;
+       
         gap: 10px;
     }
     .logo-left > img{
@@ -55,9 +70,24 @@
     }
 
     .navbar-right > button {
+        color: white;
         background-color: rgb(254, 163, 1);
         border: none;
         padding: .5rem 1.5rem;
         border-radius: .25rem;
+    }
+    .banner{
+       flex-direction: row;
+       
+    }
+    .banner-description{
+        font-weight: 400;
+    }
+    .banner-button{
+      color: white;
+      background-color: black;
+      border: none;
+      padding: .5rem 1.5rem;
+      border-radius: .25rem;
     }
 }
