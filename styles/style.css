@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+
+/* shared */
 .quicksand-all {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -7,18 +9,55 @@
     font-style: normal;
   }
 
+  /* flex  */
+  .flex {
+    display: flex;
+  }
+
 
   /* Mobile screan */
-  
+
   .mobile-navbar{
-    display: flex;
+   
     justify-content: space-between;
+  }
+
+  .hidden{
+    display: none;
   }
 
 
   /* Larger screan */
   @media screen and (min-width: 576px) {
+    /* Navbar start */
     .mobile-navbar {
         display: none;
+    }
+    .desktop-navbar{
+        display: flex ;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-left{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .logo-left > img{
+        height: 40px;
+    }
+    .logo-middle > ul{
+         list-style: none;
+         gap: 2rem;
+    }
+    .logo-middle > ul > li> a{
+        text-decoration: none;
+    }
+
+    .navbar-right > button {
+        background-color: rgb(254, 163, 1);
+        border: none;
+        padding: .5rem 1.5rem;
+        border-radius: .25rem;
     }
 }
