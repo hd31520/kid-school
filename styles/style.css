@@ -5,7 +5,7 @@
 .quicksand-all {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-   
+   padding: 0 10px;
     font-style: normal;
   }
 
@@ -16,12 +16,18 @@
 
 
   /* Mobile screan */
+<<<<<<< HEAD
 
+=======
+  /* Navbar */
+  
+>>>>>>> fe6fb0126f7e9e03199a4d42a36284f1e71c2c3c
   .mobile-navbar{
    
     justify-content: space-between;
   }
 
+<<<<<<< HEAD
   .hidden{
     display: none;
   }
@@ -30,10 +36,20 @@
   /* Larger screan */
   @media screen and (min-width: 576px) {
     /* Navbar start */
+=======
+.desktop-navbar{
+  display: none;
+}
+
+  /* Larger screan */
+  @media screen and (min-width: 576px) {
+      /* Navbar */
+>>>>>>> fe6fb0126f7e9e03199a4d42a36284f1e71c2c3c
     .mobile-navbar {
         display: none;
     }
     .desktop-navbar{
+<<<<<<< HEAD
         display: flex ;
         justify-content: space-between;
         align-items: center;
@@ -60,4 +76,9 @@
         padding: .5rem 1.5rem;
         border-radius: .25rem;
     }
+=======
+      display: flex;
+    } 
+    
+>>>>>>> fe6fb0126f7e9e03199a4d42a36284f1e71c2c3c
 }
