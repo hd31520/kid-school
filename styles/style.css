@@ -5,7 +5,7 @@
 .quicksand-all {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
-  padding:0;
+  padding: 0;
 
   font-style: normal;
 }
@@ -153,15 +153,15 @@
 }
 
 .gallery-section {
-width: 100%;
+  width: 100%;
   background: transparent linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
   background-size: cover;
 }
 
 .sectionlinear {
   background-image: url("/assets/bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: repeat;
+  /* background-position: center; */
 }
 
 
@@ -176,10 +176,10 @@ width: 100%;
   /* padding: 1rem 2rem; */
 }
 
-.gallery-card > img{
+.gallery-card>img {
   width: 100%;
   border-radius: 0.5rem;
-} 
+}
 
 .gallery-card>button {
   position: absolute;
@@ -191,16 +191,49 @@ width: 100%;
   top: 50%;
   color: white;
 }
-.gallery-card > h3{
+
+.gallery-card>h3 {
   text-align: center;
   padding: 0 1rem;
 }
+
 .gallery-right {
   display: grid;
-  grid-template-columns:auto auto;
+  grid-template-columns: auto auto;
 
   gap: 1rem;
 }
+
+
+footer{
+  padding: 1rem 2rem;
+  background-color: rgb(1, 172, 253);
+  display: grid;
+  grid-template-columns: auto;
+  /* flex-direction: column; */
+ /* align-items: center; */
+
+}
+.image{
+  gap: 1rem;
+}
+
+
+.no-point{
+  list-style: none;
+}
+.no-point> li >a{
+  text-decoration: none;
+  padding: 0;
+  left: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+
+
+
+
 
 
 
@@ -214,7 +247,7 @@ width: 100%;
     padding: 0 6rem;
   }
 
- 
+
 
   /* Navbar start */
   .mobile-navbar {
@@ -316,6 +349,7 @@ width: 100%;
     border-radius: 0.25rem;
     left: 10%;
     top: 55%;
+    color: white;
   }
 
   .gallery-section {
@@ -335,7 +369,7 @@ width: 100%;
     position: relative;
     /* padding: 1rem 2rem; */
   }
-  
+
 
   .gallery-card>button {
     position: absolute;
@@ -347,11 +381,22 @@ width: 100%;
     top: 60%;
     color: white;
   }
-  .gallery-card > h3{
+
+  .gallery-card>h3 {
     text-align: center;
     padding: 0 1rem;
   }
-  .sectionlinear{
+
+  .sectionlinear {
     padding: 3rem 6rem;
+  }
+
+  footer{
+    padding: 7.5rem 9rem;
+    background-color: rgb(1, 172, 253);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    
   }
 }
