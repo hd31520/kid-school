@@ -39,7 +39,7 @@ bbody{
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
 }
 
 .banner-button {
@@ -52,6 +52,7 @@ bbody{
 
 .banner-left {
   display: flex;
+  padding: 0 0.5rem;
   flex-direction: column;
   align-items: center;
 }
@@ -90,15 +91,7 @@ bbody{
 
 
 
-.arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 6rem;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .button-container {
   display: flex;
@@ -116,7 +109,7 @@ bbody{
   align-items: center;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
 }
 
 .button:hover {
@@ -124,15 +117,12 @@ bbody{
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.button:active {
-  transform: scale(0.9);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+
 
 .button i {
   color: #ffffff;
   font-size: 20px;
-}
+} 
 
 
 .card-button {
@@ -190,7 +180,7 @@ bbody{
   border: none;
   background-color: rgb(60, 216, 232);
   padding: 0.10rem 0.5rem;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   left: 10%;
   top: 38%;
   color: white;
@@ -293,7 +283,7 @@ footer{
 
   .banner {
     flex-direction: row;
-    padding: 2rem 0;
+    padding: 2rem 6rem;
 
   }
 
@@ -317,6 +307,18 @@ footer{
     gap: 2rem;
     justify-content: center;
   }
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
 
   /* Gallery */
   .gallery {
@@ -353,7 +355,7 @@ footer{
     border: none;
     background-color: rgb(60, 216, 232);
     padding: 0.50rem 2rem;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     left: 10%;
     bottom: 0%;
     color: white;
@@ -383,7 +385,7 @@ footer{
     border: none;
     background-color: rgb(60, 216, 232);
     padding: 0.50rem 2rem;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     left: 10%;
     top: 60%;
     color: white;
