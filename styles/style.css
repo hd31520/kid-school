@@ -171,7 +171,7 @@ bbody{
 
 .gallery-card {
   background-color: #fff;
-  width: 12rem;
+  width: 10rem;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -192,7 +192,7 @@ bbody{
   padding: 0.10rem 0.5rem;
   border-radius: 0.25rem;
   left: 10%;
-  top: 43%;
+  top: 38%;
   color: white;
 }
 
