@@ -9,6 +9,10 @@
 
   font-style: normal;
 }
+bbody{
+  padding: 1rem;
+}
+
 
 /* flex  */
 .flex {
@@ -66,7 +70,7 @@
   padding: 3rem 1rem;
   font-weight: 400;
   border-radius: 0.50rem;
-  width: 25rem;
+  width: 19rem;
   /* background-image: linear-gradient(to bottom, #d8f1ff, #ffffff); */
   /* width: 300px; */
 }
@@ -167,7 +171,7 @@
 
 .gallery-card {
   background-color: #fff;
-  width: 14rem;
+  width: 10rem;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -185,10 +189,10 @@
   position: absolute;
   border: none;
   background-color: rgb(60, 216, 232);
-  padding: 0.50rem 2rem;
+  padding: 0.10rem 0.5rem;
   border-radius: 0.25rem;
   left: 10%;
-  top: 50%;
+  top: 35%;
   color: white;
 }
 
