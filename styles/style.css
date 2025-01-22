@@ -3,91 +3,210 @@
 
 /* shared */
 .quicksand-all {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    padding: 0 20px;
-   
-    font-style: normal;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  padding: 0 2rem;
+
+  font-style: normal;
+}
+
+/* flex  */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.itms-center {
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Mobile screan */
+
+.banner {
+
+
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.banner-button {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: .5rem 1.5rem;
+  border-radius: .25rem;
+}
+
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-items {
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 3rem 1rem;
+  font-weight: 400;
+  border-radius: 0.50rem;
+  width: 25rem;
+  /* background-image: linear-gradient(to bottom, #d8f1ff, #ffffff); */
+  /* width: 300px; */
+}
+
+.card>a {
+  text-decoration: none;
+}
+
+.cards-section {
+  background-image: url("/assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3rem 0;
+}
+
+
+
+
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: scale(0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+
+/* Larger screan */
+@media screen and (min-width: 576px) {
+
+  header {
+    padding: 0 6rem;
   }
 
-  /* flex  */
-  .flex {
-    display: flex;
-  }
-  .justify-between{
-    justify-content: space-between;
-  }
-  .itms-center{
-    align-items: center;
+  main {
+    padding: 0 6rem;
   }
 
-  .hidden{
+  /* Navbar start */
+  .mobile-navbar {
     display: none;
   }
 
- .banner{
-  
-    
-    flex-direction: column-reverse;
- }
- 
+  .desktop-navbar {
+    display: flex;
 
-  
+  }
+
+  .logo-left {
+    display: flex;
+
+    gap: 10px;
+  }
+
+  .logo-left>img {
+    height: 40px;
+  }
+
+  .logo-middle>ul {
+    list-style: none;
+    gap: 2rem;
+  }
+
+  .logo-middle>ul>li>a {
+    text-decoration: none;
+  }
+
+  .navbar-right>button {
+    color: white;
+    background-color: rgb(254, 163, 1);
+    border: none;
+    padding: .5rem 1.5rem;
+    border-radius: .25rem;
+
+    overflow: hidden;
+  }
+
+  .banner {
+    flex-direction: row;
+    padding: 2rem 0;
+
+  }
+
+  .banner-description {
+    font-weight: 400;
+  }
+
+  .banner-left {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
 
 
-  /* Larger screan */
-  @media screen and (min-width: 576px) {
 
-    header{
-        padding: 0 6rem;
-    }
 
-    main{
-       padding:  0 6rem;
-    }
-    /* Navbar start */
-    .mobile-navbar {
-        display: none;
-    }
-    .desktop-navbar{
-        display: flex ;
-        
-    }
-    .logo-left{
-        display: flex;
-       
-        gap: 10px;
-    }
-    .logo-left > img{
-        height: 40px;
-    }
-    .logo-middle > ul{
-         list-style: none;
-         gap: 2rem;
-    }
-    .logo-middle > ul > li> a{
-        text-decoration: none;
-    }
+  /* Card items */
+  .card-items {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
 
-    .navbar-right > button {
-        color: white;
-        background-color: rgb(254, 163, 1);
-        border: none;
-        padding: .5rem 1.5rem;
-        border-radius: .25rem;
-    }
-    .banner{
-       flex-direction: row;
-       
-    }
-    .banner-description{
-        font-weight: 400;
-    }
-    .banner-button{
-      color: white;
-      background-color: black;
-      border: none;
-      padding: .5rem 1.5rem;
-      border-radius: .25rem;
-    }
+
 }
