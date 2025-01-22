@@ -171,7 +171,7 @@ bbody{
 
 .gallery-card {
   background-color: #fff;
-  width: 10rem;
+  width: 12rem;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -192,7 +192,7 @@ bbody{
   padding: 0.10rem 0.5rem;
   border-radius: 0.25rem;
   left: 10%;
-  top: 35%;
+  top: 43%;
   color: white;
 }
 
@@ -233,8 +233,6 @@ footer{
   font-size: 1.2rem;
   color: white;
 }
-
-
 
 
 
@@ -402,5 +400,27 @@ footer{
     justify-content: space-between;
     /* align-items: center; */
     
+  }
+}
+
+
+
+
+
+
+/* Medium device */
+@media screen  and (min-width: 576px) and (max-width: 1024px) {
+  .gallery-left{
+    display: none;
+  }
+  .gallery-card {
+    background-color: #fff;
+    width: 17rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* padding: 1rem 2rem; */
   }
 }
