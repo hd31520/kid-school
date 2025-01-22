@@ -337,20 +337,23 @@ footer{
     align-items: center;
     background-color: #fff;
 
-    position: relative;
+    /* position: relative; */
     /* height: 35rem; */
     border-radius: 1rem;
 
   }
+  .gallery-leftside-top{
+    position: relative;
+  }
 
-  .gallery-left>button {
+  .gallery-leftside-top>button {
     position: absolute;
     border: none;
     background-color: rgb(60, 216, 232);
     padding: 0.50rem 2rem;
     border-radius: 0.25rem;
     left: 10%;
-    top: 55%;
+    bottom: 0%;
     color: white;
   }
 
